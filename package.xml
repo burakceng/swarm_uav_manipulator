@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package>
+  <name>swarm_uav_manipulator</name>
+  <version>0.1.0</version>
+  <description>Swarm UAV manipulator application</description>
+  <maintainer email="tahsinkose50@gmail.com">tahsin kose</maintainer>
+
+
+  <license>BSD</license>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rosjava_build_tools</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>rosjava_messages</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>hector_uav_msgs</build_depend>
+  <build_depend>eigen</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>rosjava_messages</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>hector_uav_msgs</run_depend>
+  <run_depend>eigen</run_depend>
+</package>

@@ -1,0 +1,13 @@
+INSTRUCTIONS FOR THE POINT CLOUD:
+
+You need a quadrotor with kinect or asus xtion to see point cloud (quadrotor with asus xtion used in here)
+
+1. Run the command below to open rviz
+	$ rosrun rviz rviz
+2. After running the codes, on the display part in rviz choose the frame id as the id that you arrange in these codes it is "camera_link"
+
+3. On the display part push the "Add" button and choose the "PointCloud2"
+
+4. In the PointCloud2 part choose the topic that is related with your point cloud data in this case it is "/camera/depth/points"
+
+5. Then you should see the point cloud in camera frame. you can choose the frame that you interested in.

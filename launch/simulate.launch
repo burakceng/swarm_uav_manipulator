@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<launch>
+   
+  <include file="$(find swarm_uav_manipulator)/launch/start.launch"/>
+
+  <include file="$(find swarm_uav_manipulator)/launch/spawn_multiple_quadrotors.launch">
+    <arg name="model" value="$(find hector_quadrotor_description)/urdf/quadrotor_hokuyo_utm30lx.gazebo.xacro"/>
+  
+  </include>
+ 
+
+
+</launch>

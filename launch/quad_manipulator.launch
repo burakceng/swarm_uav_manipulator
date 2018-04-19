@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+	<rosparam file="$(find swarm_uav_manipulator)/param/params.yaml" />
+        <node pkg="swarm_uav_manipulator" name="quad_ui"  type="quad_ui_symlink" args="com.github.rosjava.swarm_uav_manipulator.user_interface.quad_user_interface" />
+	<node pkg="swarm_uav_manipulator" type="quad_manipulator" name="quad_controller" output="screen" />
+	<node pkg="swarm_uav_manipulator" type="motion_planner_ompl3D" name="planner_with_ompl" output="screen" />
+	<node pkg="swarm_uav_manipulator" type="collision_checker" name="collision_checker" output="screen"/>
+        
+	<!--node pkg="hector_manipulator" type="pyk.py" name="map_visualized" output="screen"/-->
+	
+</launch>
